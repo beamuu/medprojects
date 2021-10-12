@@ -7,7 +7,9 @@ interface IPatient {
     function addRecord(
         uint256 _date,
         string memory _department,
-        string memory _topic
+        string memory _topic,
+        string memory _description,
+        string memory _doctor
     ) external returns (bool);
     function getRecords() external view returns (uint _recordCount);
     function getExactRecord(uint _index) external view returns (uint256 _date, string memory _department, string memory _topic);

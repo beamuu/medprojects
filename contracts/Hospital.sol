@@ -42,4 +42,9 @@ contract Hospital {
         patients[_patient] = patient;
     }
 
+    function getPatient(address _patient) public view returns (address patientContract) {
+        patientContract = patients[_patient];
+    }
+
+    
 }
