@@ -1,0 +1,12 @@
+{
+  "name": "medprojects",
+  "version": "0.0.1",
+  "description": "Medical records implemented with smart contracts",
+  "main": "index.js",
+  "repository": "https://github.com/nutchanonc/medprojects.git",
+  "author": "nutchanonc <nutchanonc@github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "web3": "^1.6.0"
+  }
+}
