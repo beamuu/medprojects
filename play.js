@@ -4,11 +4,11 @@ const hostpitalData = require("./build/contracts/Hospital.json");
 const patientData = require("./build/contracts/Patient.json");
 
 const address = {
-    hospital: "0x464DF2A31d36eDA7bb5F330216c4F8a3E4d65E63",
-    owner: "0x7425592Bc18AF33f92f7D9E6A4A563BE62a33A6C",
+    hospital: "0x9D43156eBCfcf83abBcBdC34f081156b561dC07F",
+    owner: "0x8cD889a20e364562352352D498A4d5e0b1Ec7f98",
     account2: "0x21424b6785b4A18bFF196407Da02b535cE580375",
-    patient: "0x017a6085F31b6db89e07DcC6eb55C2f5B7aaAfAb",
-    patientContract: "0x5e1D03169F9409F17F1bE002b935f821D7A08707",
+    patient: "0xf829f9Cbadfc8c4dB505a638f34383E53b2D19Ff",
+    patientContract: "0xd8D26937E1A2B458FAe25A64d76cC9C43f64F6D2",
 }
 
 async function main() {
@@ -26,10 +26,10 @@ async function main() {
     // console.log(await PatientInstance.methods.owner().call());
     // await HospitalInstance.methods.addRecord(address.patient, Math.floor(Date.now() / 1000), "Magical Surgery", "Hello", "Word", "Nutchanon Chantrasup")
     // .send({ from: address.owner, gas: 3000000 } );
-    console.log(await PatientInstance.methods.getRecords().call());
-    console.log(await PatientInstance.methods.getExactRecord(0).call());
-    PatientInstance.methods.addRecord(Math.floor(Date.now() / 1000), "Duck Surgery", "Yoo", "Dude", "Nutchanon2 Chantrasup")
-    .send({ from: address.patient, gas: 3000000 } );
+    // console.log(await PatientInstance.methods.getRecords().call());
+    // console.log(await PatientInstance.methods.getExactRecord(0).call());
+    // PatientInstance.methods.addRecord(Math.floor(Date.now() / 1000), "Duck Surgery", "Yoo", "Dude", "Nutchanon2 Chantrasup")
+    // .send({ from: address.patient, gas: 3000000 });
 
 }   
 

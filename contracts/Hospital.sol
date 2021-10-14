@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0
 
-pragma solidity >=0.7.0 <0.9.0;
+pragma solidity ^0.8.0;
 
 import "./interfaces/IPatient.sol";
 import "./Patient.sol";
@@ -17,7 +17,7 @@ contract Hospital {
     modifier onlyOwner {
         require(msg.sender == owner, "Medprojects: PERMISSION_DENIED");
         _;
-   }
+    }
 
     mapping(address => address) patients;
 
@@ -69,14 +69,28 @@ contract Hospital {
 
     function addRecord(
         address target,
-        uint256 _date,
+        uint112 _dateStart,
+        uint112 _dateEnd,
         string memory _department,
-        string memory _topic,
-        string memory _description,
-        string memory _doctor
+        string[] memory _treatmentTopics,
+        string[] memory _treatmentDescription,
+        string[] memory _resultTopics,
+        string[] memory _resultDescription,
+        string[] memory _doctor,
+        string[] memory _doctorResponsibility
     ) public onlyOwner returns (bool) {
         address destinationContract = patients[target];
-        IPatient(destinationContract).addRecord(_date, _department, _topic, _description, _doctor);
+        IPatient(destinationContract).addRecord(
+            _dateStart, 
+            _dateEnd, 
+            _department, 
+            _treatmentTopics,
+            _treatmentDescription,
+            _resultTopics,
+            _resultDescription,
+            _doctor,
+            _doctorResponsibility
+        );
         return true;
     }
 
