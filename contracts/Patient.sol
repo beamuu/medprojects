@@ -86,6 +86,7 @@ contract Patient {
         string[] memory _doctor,
         string[] memory _doctorResponsibility
     ) {
+        require(allowances[msg.sender][_index] == true, "Medprojects: READ_RECORD not allowed");
         // Get exact record by index
         Record memory target = records[_index];
         _dateStart = target.dateStart;
