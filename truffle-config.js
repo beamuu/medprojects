@@ -48,7 +48,8 @@ module.exports = {
      network_id: "*",       // Any network (default: none)
     },
     testnet: {
-      provider: () => new HDWalletProvider(mnemonic, "https://data-seed-prebsc-1-s1.binance.org:8545/"),
+      networkCheckTimeout: 10000, 
+      provider: () => new HDWalletProvider(mnemonic, "https://data-seed-prebsc-1-s3.binance.org:8545/"),
       network_id: 97,
       confirmations: 10,
       timeoutBlocks: 200,

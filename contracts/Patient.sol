@@ -5,7 +5,7 @@ pragma solidity ^0.8.0;
 contract Patient {
 
     address public hospital;
-    address public owner;
+    address private owner;
 
     struct Record {
         uint112 dateStart;
@@ -108,5 +108,9 @@ contract Patient {
     }
     function allowance(address target, uint recordIndex) public view returns (bool result) {
         result = allowances[target][recordIndex];
+    }
+    function getOwner() public view returns (address _owner) {
+        require(msg.sender == hospital || msg.sender == owner, "Medprojects: VIEW_OWNER not allowed");
+        _owner = owner;
     }
 }
