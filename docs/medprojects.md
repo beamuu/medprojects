@@ -7,10 +7,10 @@
 ### How it works
 There are 2 smart contracts first is the hospital contract and patient contract
 
-#### Hospital contract
+#### `Hospital contract`
 Hospital contract were created by hospitals or medical providers. The hospital contract can create patient contracts and add the record to the specific patient.
 
-#### Patient contract
+#### `Patient contract`
 Patient contract stores individual medical records for each account. Records can be added by the owned hospital only.
 
 #### MedScan
