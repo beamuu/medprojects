@@ -13,12 +13,22 @@
 
 
 ```
-A Medical smart contract project
+A medical smart contract project
 ```
 
-Medprojects is a implementation of Ethereum Smart Contract for storing hospital patients' medical data and reports.
+Medprojects is a implementation of Ethereum Smart Contract for storing patients' medical data and reports. Medprojects is now a prototype and to be  developed as a full application in future. Right now, we are testing on `Binance Smart Chain Testnet` and aiming to launch in to a low gas fee blockchain.
 
 - For frontend source code please [visit here](https://github.com/nutchanonc/medprojects-frontend).
+
+
+### Checkout our prototype [here](https://medprojects.nutchanon.co).
+
+- Our prototype requires MetaMask (Ethereum Wallet) which needs to be installed as a browser extension.
+[Visit MetaMask](https://metamask.io/)
+
+<br /><br /><br />
+
+## Deployment & Configurations (For Hospital)
 
 ### Clone the contracts for your hospital
 
