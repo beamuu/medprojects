@@ -1,7 +1,24 @@
-# Medprojects
-Medical smart contract project
+<p align="center">
+<img src="https://github.com/nutchanonc/medprojects-frontend/blob/main/public/github-banner.png?raw=true" width="100%"/>
+</p>
 
-- For frontend source code [visit here](https://github.com/nutchanonc/medprojects-frontend)
+<br />
+<br />
+
+![Solidity](https://img.shields.io/badge/Solidity-%23363636.svg?style=for-the-badge&logo=solidity&logoColor=white)
+![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=Ethereum&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+<br />
+<br />
+
+
+```
+A Medical smart contract project
+```
+
+Medprojects is a implementation of Ethereum Smart Contract for storing hospital patients' medical data and reports.
+
+- For frontend source code please [visit here](https://github.com/nutchanonc/medprojects-frontend).
 
 ### Clone the contracts for your hospital
 
