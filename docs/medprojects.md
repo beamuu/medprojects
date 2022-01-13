@@ -30,3 +30,7 @@ The patient contract has been set owner variable to private, so noone knows who 
 MedScan is a record explorer which located on the top-right of the medproject's website. MedScan searchs the record from `patient contract address` and the `record index`.
 Plase remember that any published records can be view by anyone if they know both of the search factor.
 But your MetaMask address won't be publish.
+
+![](https://github.com/nutchanonc/medprojects-frontend/blob/main/public/diagram.png?raw=true)
+
+<p align="center">No one can track you back from your patient smart contract.</p>
